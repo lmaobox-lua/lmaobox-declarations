@@ -1,0 +1,18 @@
+env:
+  es2021: true
+plugins:
+  - jsdoc
+extends:
+  - standard-with-typescript
+  - prettier
+  - plugin:jsdoc/recommended-typescript
+parserOptions:
+  ecmaVersion: latest
+  project: "./tsconfig.json"
+rules:
+  "@typescript-eslint/triple-slash-reference": "off"
+  jsdoc/no-types: "error"
+  jsdoc/require-returns-check: "off"
+  jsdoc/require-hyphen-before-param-description: "error"
+  jsdoc/require-param-description: "error"
+  jsdoc/check-tag-names: [error, { definedTags: [noSelfInFile] }]

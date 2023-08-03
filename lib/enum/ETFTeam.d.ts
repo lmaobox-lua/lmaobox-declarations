@@ -1,0 +1,12 @@
+export enum ETFTeam {
+    TEAM_UNASSIGNED = 0,
+    TEAM_SPECTATOR = 1,
+    TF_TEAM_PVE_DEFENDERS = 2,
+    TF_TEAM_RED = 2,
+    TF_TEAM_BLUE = 3,
+    TF_TEAM_PVE_INVADERS = 3,
+    TF_TEAM_COUNT = 4,
+    TF_TEAM_PVE_INVADERS_GIANTS = 4,
+    TEAM_ANY = -1,
+    TEAM_INVALID = -1,
+}
