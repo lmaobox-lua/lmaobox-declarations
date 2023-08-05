@@ -1,4 +1,4 @@
-export enum EWeaponID {
+export const enum EWeaponID {
     TF_WEAPON_NONE = 0,
     TF_WEAPON_BAT = 1,
     TF_WEAPON_BAT_WOOD = 2,

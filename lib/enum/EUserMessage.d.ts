@@ -1,4 +1,4 @@
-export enum EUserMessage {
+export const enum EUserMessage {
     Geiger = 0,
     Train = 1,
     HudText = 2,

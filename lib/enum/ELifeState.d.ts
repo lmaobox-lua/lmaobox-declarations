@@ -1,4 +1,4 @@
-export enum ELifeState {
+export const enum ELifeState {
     LIFE_ALIVE = 0,
     LIFE_DYING = 1,
     LIFE_DEAD = 2,

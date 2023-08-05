@@ -1,4 +1,4 @@
-export enum ERoundState {
+export const enum ERoundState {
     GR_STATE_INIT = 0,
     GR_STATE_PREGAME = 1,
     GR_STATE_STARTGAME = 2,

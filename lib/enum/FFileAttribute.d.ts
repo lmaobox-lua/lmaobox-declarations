@@ -1,4 +1,4 @@
-export enum FFileAttribute {
+export const enum FFileAttribute {
     FILE_ATTRIBUTE_READONLY = 0x1,
     FILE_ATTRIBUTE_HIDDEN = 0x2,
     FILE_ATTRIBUTE_SYSTEM = 0x4,

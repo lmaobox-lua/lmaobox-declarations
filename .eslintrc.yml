@@ -15,4 +15,4 @@ rules:
   jsdoc/require-returns-check: "off"
   jsdoc/require-hyphen-before-param-description: "error"
   jsdoc/require-param-description: "error"
-  jsdoc/check-tag-names: [error, { definedTags: [noSelfInFile] }]
+  jsdoc/check-tag-names: [error, { definedTags: [noSelfInFile, noSelf, customConstructor] }]

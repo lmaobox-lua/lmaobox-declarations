@@ -1,4 +1,4 @@
-export enum EButtonCode {
+export const enum EButtonCode {
     BUTTON_CODE_INVALID = -1,
     BUTTON_CODE_NONE = 0,
     KEY_FIRST = 0,

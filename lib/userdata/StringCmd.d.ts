@@ -3,12 +3,12 @@
  */
 interface StringCmd {
     /**
-     * @returns {string} The command string.
+     * @returns The command string.
      */
     Get: () => string
 
     /**
-     * @param {string} command - The command string to set.
+     * @param command - The command string to set.
      * @example
      * // Prevent command execution.
      * callbacks.Register('SendStringCmd', command => command:Set('') )

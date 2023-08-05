@@ -7,65 +7,65 @@ interface Entity {
      * Returns whether the entity is valid.
      * This is done automatically and all other functions will return `undefined` if the entity is invalid.
      * Call this method only if you know what you're doing
-     * @returns {boolean} Whether the entity is valid.
+     * @returns Whether the entity is valid.
      */
     IsValid: () => boolean
 
     /**
-     * @returns {string} The class of the entity.
+     * @returns The class of the entity.
      */
     GetClass: () => string
 
     /**
-     * @returns {number} The entity index.
+     * @returns The entity index.
      */
     GetIndex: () => number
 
     /**
-     * @returns {number} The team number of the entity.
+     * @returns The team number of the entity.
      */
     GetTeamNumber: () => number
 
     /**
-     * @returns {Vector3} The absolute position of the entity.
+     * @returns The absolute position of the entity.
      */
     GetAbsOrigin: () => Vector3
 
     /**
-     * @param {Vector3} origin - The absolute position to set for the entity.
+     * @param origin - The absolute position to set for the entity.
      */
     SetAbsOrigin: (origin: Vector3) => void
 
     /**
      * Returns the mins of the entity, which must be combined with the origin.
-     * @returns {Vector3} The mins of the entity.
+     * @returns The mins of the entity.
      */
     GetMins: () => Vector3
 
     /**
      * Returns the maxs of the entity, which must be combined with the origin.
-     * @returns {Vector3} The maxs of the entity.
+     * @returns The maxs of the entity.
      */
     GetMaxs: () => Vector3
 
     /**
-     * @returns {boolean} Whether the entity is alive.
+     * @returns Whether the entity is alive.
      */
     IsAlive: () => boolean
 
     /**
-     * @returns {number} The health of the entity.
+     * @returns The health of the entity.
      */
     GetHealth: () => number
 
     /**
-     * @returns {number} The max health of the entity.
+     * @returns The max health of the entity.
      */
     GetMaxHealth: () => number
 
     /**
      * @param modelPath - The path to the model
-     * @returns {boolean} Whether the model was set successfully
+     * @returns Whether the model was set successfully
      */
     SetModel: (modelPath: string) => boolean
 
@@ -78,7 +78,7 @@ interface Entity {
 
     /**
      * Dormant entities are not drawn and shouldn't be interacted with.
-     * @returns {boolean} Whether the entity is dormant.
+     * @returns Whether the entity is dormant.
      */
     IsDormant: () => boolean
 }

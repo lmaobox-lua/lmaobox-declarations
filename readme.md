@@ -1,14 +1,16 @@
 ## Lmaobox Typescript Annotations
 
-Based on build **August 3, 2023**
+Based on build **August 05 2023 11:55 UTC**
 
-\> _**Lmaobox development just got a whole lot better**_ 🧠 - LewdDeveloper
+&gt; _**Lmaobox development just got a whole lot better**_ 🧠 - LewdDeveloper
 
 ## Installation guide
 
 ### Node.js
 
-1.  TODO
+1.  Clone this repository: https://github.com/LewdDeveloper/lmaobox-tstl-template
+2.  npm install
+3.  npm run dev
 
 Preview
 
@@ -20,9 +22,9 @@ Preview
 
 ## Console commands
 
-| Command | Description |
-| --- | --- |
-| lua\_tc | Toggle lua evaluation mode |
-| lua\_load _**PATH**_ | Load a lua script in localappdata folder |
-| lua\_exec _**CODE**_ | Evaluate lua code |
-| lua | Same as lua\_exec |
+| Command             | Description                              |
+| ------------------- | ---------------------------------------- |
+| lua_tc              | Toggle lua evaluation mode               |
+| lua_load _**PATH**_ | Load a lua script in localappdata folder |
+| lua_exec _**CODE**_ | Evaluate lua code                        |
+| lua                 | Same as lua_exec                         |

@@ -1,4 +1,4 @@
-export enum FMaterialFlag {
+export const enum FMaterialFlag {
     MATERIAL_VAR_DEBUG = 1 << 0,
     MATERIAL_VAR_NO_DEBUG_OVERRIDE = 1 << 1,
     MATERIAL_VAR_NO_DRAW = 1 << 2,

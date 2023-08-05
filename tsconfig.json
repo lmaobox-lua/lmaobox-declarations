@@ -11,7 +11,7 @@
         "noImplicitAny": true,
         "removeComments": false
     },
-    "include": ["lib/**/*.d.ts", "lib/userdata/Entity/BaseEntity.d.ts"],
+    "include": ["lib/**/*.d.ts"],
     "tstl": {
         "buildMode": "library",
         "luaTarget": "5.4",

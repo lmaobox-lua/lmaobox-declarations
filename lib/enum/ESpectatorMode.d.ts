@@ -1,4 +1,4 @@
-export enum ESpectatorMode {
+export const enum ESpectatorMode {
     OBS_MODE_NONE = 0,
     OBS_MODE_DEATHCAM = 1,
     OBS_MODE_FREEZECAM = 2,

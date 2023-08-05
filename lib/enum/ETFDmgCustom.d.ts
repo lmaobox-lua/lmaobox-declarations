@@ -1,4 +1,4 @@
-export enum ETFDmgCustom {
+export const enum ETFDmgCustom {
     TF_DMG_CUSTOM_NONE = 0,
     TF_DMG_CUSTOM_HEADSHOT = 1,
     TF_DMG_CUSTOM_BACKSTAB = 2,

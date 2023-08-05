@@ -1,4 +1,4 @@
-export enum EMoveType {
+export const enum EMoveType {
     MOVETYPE_NONE = 0,
     MOVETYPE_ISOMETRIC = 1,
     MOVETYPE_WALK = 2,

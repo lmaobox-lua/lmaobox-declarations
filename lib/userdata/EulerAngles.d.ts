@@ -1,6 +1,8 @@
 /**
  * A class that represents a set of Euler angles.
  */
+
+/** @customConstructor EulerAngles */
 declare class EulerAngles {
     /**
      * Creates a new instance of EulerAngles.
@@ -26,11 +28,9 @@ declare class EulerAngles {
     z: number
 
     /**
-     * Returns the X, Y, and Z coordinates as separate variables.
-     * @returns An object with the X, Y, and Z coordinates as separate variables.
-     * undocumented
+     * @returns the X, Y, and Z coordinates as separate variables.
      */
-    Unpack(): { x: number; y: number; z: number }
+    Unpack(): LuaMultiReturn<[number, number, number]>
 
     /**
      * Clears the angles to 0, 0, 0.
@@ -44,22 +44,19 @@ declare class EulerAngles {
 
     /**
      * Returns the forward vector of the angles.
-     * @returns An object with the X, Y, and Z components of the forward vector.
-     * undocumented
+     * @returns A Vector3 object with the X, Y, and Z components of the forward vector.
      */
-    Forward(): { x: number; y: number; z: number }
+    Forward(): Vector3
 
     /**
      * Returns the right vector of the angles.
-     * @returns An object with the X, Y, and Z components of the right vector.
-     * undocumented
+     * @returns A Vector3 object with the X, Y, and Z components of the right vector.
      */
-    Right(): { x: number; y: number; z: number }
+    Right(): Vector3
 
     /**
      * Returns the up vector of the angles.
-     * @returns An object with the X, Y, and Z components of the up vector.
-     * undocumented
+     * @returns A Vector3 object with the X, Y, and Z components of the up vector.
      */
-    Up(): { x: number; y: number; z: number }
+    Up(): Vector3
 }

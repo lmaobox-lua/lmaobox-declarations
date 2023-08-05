@@ -1,4 +1,4 @@
-export enum ESignonState {
+export const enum ESignonState {
     SIGNONSTATE_NONE = 0,
     SIGNONSTATE_CHALLENGE = 1,
     SIGNONSTATE_CONNECTED = 2,

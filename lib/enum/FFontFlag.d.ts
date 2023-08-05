@@ -1,4 +1,4 @@
-export enum FFontFlag {
+export const enum FFontFlag {
     FONTFLAG_NONE = 0,
     FONTFLAG_ITALIC = 1,
     FONTFLAG_UNDERLINE = 2,

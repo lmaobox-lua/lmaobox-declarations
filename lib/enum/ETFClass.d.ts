@@ -1,4 +1,4 @@
-export enum ETFClass {
+export const enum ETFClass {
     TF_CLASS_UNDEFINED = 0,
     TF_CLASS_SCOUT = 1,
     TF_CLASS_SNIPER = 2,

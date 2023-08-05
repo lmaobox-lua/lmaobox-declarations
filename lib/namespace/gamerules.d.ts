@@ -35,8 +35,8 @@ declare namespace gamerules {
     function IsMvM(): boolean
 
     /**
-     * @returns The current match group.
-     * undocumented
+     * @returns The current match group number.
+     * @see {@link https://github.com/SteamDatabase/GameTracking-TF2/blob/master/Protobufs/tf_gcmessages.proto#L188}
      */
     function GetCurrentMatchGroup(): number
 

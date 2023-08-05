@@ -78,65 +78,65 @@ interface UserCmd {
     sendpacket: boolean
 
     /**
-     * @param {number} pitch - The pitch angle to set.
-     * @param {number} yaw - The yaw angle to set.
-     * @param {number} roll - The roll angle to set.
+     * @param pitch - The pitch angle to set.
+     * @param yaw - The yaw angle to set.
+     * @param roll - The roll angle to set.
      */
     SetViewAngles: (pitch: number, yaw: number, roll: number) => void
 
     /**
-     * @returns {EulerAngles} The view angles of the player.
+     * @returns The view angles of the player.
      */
     GetViewAngles: () => EulerAngles
 
     /**
-     * @param {boolean} sendpacket - Whether the command should be sent to the server or choked.
+     * @param sendpacket - Whether the command should be sent to the server or choked.
      */
     SetSendPacket: (sendpacket: boolean) => void
 
     /**
-     * @returns {boolean} Whether the command should be sent to the server or choked.
+     * @returns Whether the command should be sent to the server or choked.
      */
     GetSendPacket: () => boolean
 
     /**
      
-     * @param {number} buttons - The buttons that are pressed.
+     * @param buttons - The buttons that are pressed.
      */
     SetButtons: (buttons: number) => void
 
     /**
-     * @returns {number} The buttons that are pressed.
+     * @returns The buttons that are pressed.
      */
     GetButtons: () => number
 
     /**
-     * @param {number} factor - The forward movement of the player.er.
+     * @param factor - The forward movement of the player.er.
      */
     SetForwardMove: (factor: number) => void
 
     /**
-     * @returns {number} The forward movement of the player.
+     * @returns The forward movement of the player.
      */
     GetForwardMove: () => number
 
     /**
-     * @param {number} factor - The sideways movement of the player.
+     * @param factor - The sideways movement of the player.
      */
     SetSideMove: (factor: number) => void
 
     /**
-     * @returns {number} The sideways movement of the player.
+     * @returns The sideways movement of the player.
      */
     GetSideMove: () => number
 
     /**
-     * @param {number} factor - The upward movement of the player.
+     * @param factor - The upward movement of the player.
      */
     SetUpMove: (factor: number) => void
 
     /**
-     * @returns {number} The upward movement of the player.
+     * @returns The upward movement of the player.
      */
     GetUpMove: () => number
 }

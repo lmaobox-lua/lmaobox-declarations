@@ -1,4 +1,4 @@
-export enum ELoadoutSlot {
+export const enum ELoadoutSlot {
     LOADOUT_POSITION_PRIMARY = 0,
     LOADOUT_POSITION_SECONDARY = 1,
     LOADOUT_POSITION_MELEE = 2,

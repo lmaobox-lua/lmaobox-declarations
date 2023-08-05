@@ -1,4 +1,4 @@
-export enum ETFTeam {
+export const enum ETFTeam {
     TEAM_UNASSIGNED = 0,
     TEAM_SPECTATOR = 1,
     TF_TEAM_PVE_DEFENDERS = 2,

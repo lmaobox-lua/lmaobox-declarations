@@ -1,4 +1,4 @@
-export enum ETFCond {
+export const enum ETFCond {
     TF_COND_AIMING = 0,
     TF_COND_ZOOMED = 1,
     TF_COND_DISGUISING = 2,

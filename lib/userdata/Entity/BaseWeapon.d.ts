@@ -1,6 +1,6 @@
 interface Entity {
     /**
-     * @returns {boolean} Whether the entity is a weapon.
+     * @returns Whether the entity is a weapon.
      */
     IsWeapon: () => boolean
 

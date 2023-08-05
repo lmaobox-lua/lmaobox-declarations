@@ -31,7 +31,7 @@ declare namespace gamecoordinator {
     /**
      * @returns The status of the match relative to the player connection.
      */
-    function GetMatchAbandonStatus(): string
+    function GetMatchAbandonStatus(): number
 
     /**
      * Returns the ping data for all available data centers in a table.

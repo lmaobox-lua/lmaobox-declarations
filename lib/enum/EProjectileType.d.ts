@@ -1,4 +1,4 @@
-export enum EProjectileType {
+export const enum EProjectileType {
     TF_PROJECTILE_NONE = 0,
     TF_PROJECTILE_BULLET = 1,
     TF_PROJECTILE_ROCKET = 2,

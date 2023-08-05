@@ -39,7 +39,7 @@ declare namespace party {
      * Returns a table where values are all possible match groups as MatchGroup objects.
      * @returns An object where keys are match group names and values are MatchGroup objects.
      */
-    function GetAllMatchGroups(): MatchGroup
+    function GetAllMatchGroups(): LuaMap<string, MatchGroup>
 
     /**
      * Leaves the current party.
@@ -54,7 +54,7 @@ declare namespace party {
      */
     function CanQueueForMatchGroup(
         matchGroup: MatchGroup
-    ): boolean | LuaMap<string, string>
+    ): true | LuaMap<string, string>
 
     /**
      * @param matchGroup - The match group to queue up for.
@@ -87,7 +87,7 @@ declare namespace party {
     function CancelQueueStandby(): void
 
     /**
-     * @param index - The index of the party member to get the activity for.
+     * @param index - The index of the party member to get the activity for. (1-6)
      * @returns The PartyMemberActivity of the party member
      */
     function GetMemberActivity(index: number): PartyMemberActivity | undefined

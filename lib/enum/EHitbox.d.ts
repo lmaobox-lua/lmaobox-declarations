@@ -1,4 +1,4 @@
-export enum EHitbox {
+export const enum EHitbox {
     HITBOX_HEAD = 0,
     HITBOX_PELVIS = 1,
     HITBOX_SPINE_0 = 2,

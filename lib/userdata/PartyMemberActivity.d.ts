@@ -3,19 +3,22 @@
  */
 interface PartyMemberActivity {
     /**
-     * Returns the name of the party member's activity.
-     * @returns {string} The name of the party member's activity.
-     * undocumented
+     * @returns The lobby ID of the party member, or undefined if the member is not in a matchmade game.
      */
-    GetName: () => string
+    GetLobbyID: () => string | undefined
 
     /**
-     * @returns {number} The ID of the party member's activity.
+     * @returns Whether the party member is currently online.
      */
-    GetID: () => number
+    IsOnline: () => boolean
 
     /**
-     * @returns {string} The localization key for the name of the party member's activity.
+     * @returns Whether the party member is currently blocked from joining a matchmade game.
      */
-    GetNameLocKey: () => string
+    IsMultiqueueBlocked: () => boolean
+
+    /**
+     * @returns The client version of the party member.
+     */
+    GetClientVersion: () => string
 }

@@ -1,11 +1,11 @@
 interface Entity {
     /**
-     * @returns {boolean} Whether the entity is a player.
+     * @returns Whether the entity is a player.
      */
     IsPlayer: () => boolean
 
     /**
-     * @returns {string} The name of the player entity, or an empty string if the entity is not a player.
+     * @returns The name of the player entity, or an empty string if the entity is not a player.
      */
     GetName: () => string
 
