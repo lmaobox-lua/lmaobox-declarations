@@ -12,7 +12,7 @@ interface Entity {
 
     /**
      * Returns the hitbox surrounding box of the entity as a table of `Vector3` mins and maxs.
-     * @returns @returnsThe hitbox surrounding box of the entity.
+     * @returns The hitbox surrounding box of the entity.
      * undocumented
      */
     HitboxSurroundingBox: () => LuaMap<{ mins: Vector3; maxs: Vector3 }>

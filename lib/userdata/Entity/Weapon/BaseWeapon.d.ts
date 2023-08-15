@@ -5,14 +5,9 @@ interface Entity {
     IsWeapon: () => boolean
 
     /**
-     * @returns The swing range of the weapon, or null if the weapon is not a melee weapon
+     * @returns Whether the weapon's view model is flipped.
      */
-    GetSwingRange: () => number | null
-
-    /**
-     * @returns The Trace object result of the weapon's swing
-     */
-    DoSwingTrace: () => Trace
+    IsViewModelFlipped: () => boolean
 
     /**
      * @returns The heal rate of the medigun, or null if the weapon is not a medigun

@@ -40,11 +40,89 @@ declare namespace draw {
     function OutlinedRect(x1: number, y1: number, x2: number, y2: number): void
 
     /**
+     * Draw a rectangle with a fade. The fade is horizontal by default, but can be vertical by setting horizontal to false. The alpha values are between 0 and 255.
+     * @param x1 - The x-coordinate of the top-left corner of the rectangle.
+     * @param y1 - The y-coordinate of the top-left corner of the rectangle.
+     * @param x2 - The x-coordinate of the bottom-right corner of the rectangle.
+     * @param y2 - The y-coordinate of the bottom-right corner of the rectangle.
+     * @param alpha1 - The alpha value at the top or left side of the rectangle.
+     * @param alpha2 - The alpha value at the bottom or right side of the rectangle.
+     * @param horizontal - Whether the fade is horizontal (true) or vertical (false).
+     */
+    function FilledRectFade(
+        x1: number,
+        y1: number,
+        x2: number,
+        y2: number,
+        alpha1: number,
+        alpha2: number,
+        horizontal: boolean
+    ): void
+
+    /**
+     * Draws a fade between the fadeStartPt and fadeEndPT points. The fade is horizontal by default, but can be vertical by setting horizontal to false. The alpha values are between 0 and 255.
+     * @param x1 - The x-coordinate of the top-left corner of the rectangle.
+     * @param y1 - The y-coordinate of the top-left corner of the rectangle.
+     * @param x2 - The x-coordinate of the bottom-right corner of the rectangle.
+     * @param y2 - The y-coordinate of the bottom-right corner of the rectangle.
+     * @param fadeStartPt - The point where the fade starts.
+     * @param fadeEndPt - The point where the fade ends.
+     * @param alpha1 - The alpha value at the start of the fade.
+     * @param alpha2 - The alpha value at the end of the fade.
+     * @param horizontal - Whether the fade is horizontal (true) or vertical (false).
+     */
+    function FilledRectFastFade(
+        x1: number,
+        y1: number,
+        x2: number,
+        y2: number,
+        fadeStartPt: number,
+        fadeEndPt: number,
+        alpha1: number,
+        alpha2: number,
+        horizontal: boolean
+    ): void
+
+    /**
+     * Draw a colored circle with center at centerx, centery and radius radius. The color is specified by r, g, b, a.
+     * @param centerx - The x-coordinate of the center of the circle.
+     * @param centery - The y-coordinate of the center of the circle.
+     * @param radius - The radius of the circle.
+     * @param r - The red component of the color.
+     * @param g - The green component of the color.
+     * @param b - The blue component of the color.
+     * @param a - The alpha component of the color.
+     */
+    function ColoredCircle(
+        centerx: number,
+        centery: number,
+        radius: number,
+        r: number,
+        g: number,
+        b: number,
+        a: number
+    ): void
+
+    /**
+     * Draw an outlined circle with center at centerx, centery and radius radius. The circle is made up of segments number of lines.
+     * @param x - The x-coordinate of the center of the circle.
+     * @param y - The y-coordinate of the center of the circle.
+     * @param radius - The radius of the circle.
+     * @param segments - The number of line segments to use to draw the circle.
+     */
+    function OutlinedCircle(
+        x: number,
+        y: number,
+        radius: number,
+        segments: number
+    ): void
+
+    /**
      * Get the size of the given text with the current font.
      * @param text - The text to measure.
-     * @returns An object with the width and height of the text in pixels.
+     * @returns The width and height of the text in pixels.
      */
-    function GetTextSize(text: string): { width: number; height: number }
+    function GetTextSize(text: string): LuaMultiReturn<[number, number]>
 
     /**
      * Draw the given text at (x, y).
@@ -139,6 +217,18 @@ declare namespace draw {
         y1: number,
         x2: number,
         y2: number
+    ): void
+
+    /**
+     * Draw the texture by textureId as a polygon.
+     * @param textureId - The ID of the texture to draw.
+     * @param vertices - A list of tables, each containing 4 values: x,y of the vertex, and u,v of the tex coordinate.
+     * @param clipVertices - Whether the resulting polygon should be clipped to the screen or not.
+     */
+    function TexturedPolygon(
+        textureId: number,
+        vertices: Array<[number, number, number, number]>,
+        clipVertices: boolean
     ): void
 
     /**

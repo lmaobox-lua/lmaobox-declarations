@@ -14,7 +14,7 @@ type RichPresenceKey =
 interface CallbackAction {
     Draw: (arg0: undefined) => void
     DrawModel: (arg0: DrawModelContext) => void
-    DrawStaticPropArrayFast: (arg0: StaticPropRenderInfo) => void
+    DrawStaticProps: (arg0: StaticPropRenderInfo) => void
     CreateMove: (arg0: UserCmd) => void
     FireGameEvent: (arg0: GameEvent) => void
     DispatchUserMessage: (arg0: UserMessage) => void

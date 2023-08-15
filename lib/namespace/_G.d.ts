@@ -2,12 +2,9 @@
 
 /**
  * @param table - The Lua table.
- * @param n - undocumented
+ * @param indent - extra space padding
  */
-declare function printLuaTable(
-    table: LuaPairsIterable<any, any>,
-    n?: number
-): void
+declare function printLuaTable(table: AnyTable, indent?: number): void
 
 /**
  * @param r - the red component of the color (0-255)
@@ -29,6 +26,6 @@ declare function UnloadScript(filePath: string): void
 
 /**
  * Wrapper for debug.getinfo()
- * @returns The name of the currently executing script.
+ * @returns The filename of the currently executing script.
  */
 declare function GetScriptName(): void

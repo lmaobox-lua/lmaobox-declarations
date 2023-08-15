@@ -6,7 +6,7 @@ interface StaticPropRenderInfo {
      * Replace material used to draw the models.
      * @param mat - The material to use.
      */
-    ForcedMaterialOverride: (mat: Material) => void
+    ForcedMaterialOverride: (mat: Material | undefined) => void
 
     /**
      * Redraws the models. Can be used to achieve various effects with different materials.
@@ -15,13 +15,15 @@ interface StaticPropRenderInfo {
 
     /**
      * Sets the color modulation of the models via StudioRender.
-     * @param color - The color to set.
+     * @param r - The red component of the color. (0-1)
+     * @param g - The green component of the color. (0-1)
+     * @param b - The blue component of the color. (0-1)
      */
     StudioSetColorModulation: (r: number, g: number, b: number) => void
 
     /**
      * Sets the alpha modulation of the models via StudioRender.
-     * @param alpha - The alpha value to set.
+     * @param alpha - The alpha value to set. (0-1)
      */
     StudioSetAlphaModulation: (alpha: number) => void
 }

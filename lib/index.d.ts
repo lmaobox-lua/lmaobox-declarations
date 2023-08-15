@@ -42,6 +42,6 @@
 /// <reference path="./userdata/Entity/BaseAnimating.d.ts" />
 /// <reference path="./userdata/Entity/BaseItem.d.ts" />
 /// <reference path="./userdata/Entity/BasePlayer.d.ts" />
-/// <reference path="./userdata/Entity/BaseWeapon.d.ts" />
+/// <reference path="./userdata/Entity/Weapon/BaseWeapon.d.ts" />
 /// <reference path="./userdata/Entity/DataTables.d.ts" />
 /// <reference path="./userdata/Entity/index.d.ts" />

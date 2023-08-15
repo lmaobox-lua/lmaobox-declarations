@@ -1,8 +1,8 @@
 ## Lmaobox Typescript Annotations
 
-Based on build **August 05 2023 11:55 UTC**
+Based on build **AUG 13 2023 22:58:59 UTC**
 
-&gt; _**Lmaobox development just got a whole lot better**_ 🧠 - LewdDeveloper
+\> _**Lmaobox development just got a whole lot better**_ 🧠 - LewdDeveloper
 
 ## Installation guide
 
@@ -17,6 +17,8 @@ Preview
 ## How to use typescript-to-lua
 
 [https://typescripttolua.github.io/](https://typescripttolua.github.io/)
+
+[https://typescripttolua.github.io/docs/advanced/writing-declarations/#npm-publishing](https://typescripttolua.github.io/docs/advanced/writing-declarations/#npm-publishing)
 
 [https://www.typescriptlang.org/](https://www.typescriptlang.org/)
 

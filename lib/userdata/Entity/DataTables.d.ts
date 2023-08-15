@@ -3,38 +3,38 @@ interface Entity {
      * @param propName - The name of the netvar
      * @returns The float value of the netvar
      */
-    GetPropFloat: (propName: string, ...args: any[]) => number
+    GetPropFloat: (propName: string, ...args: string[]) => number
 
     /**
      * @param propName - The name of the netvar
      * @returns The int value of the netvar
      */
-    GetPropInt: (propName: string, ...args: any[]) => number
+    GetPropInt: (propName: string, ...args: string[]) => number
 
     /**
      * @param propName - The name of the netvar
      * @returns The bool value of the netvar
      */
-    GetPropBool: (propName: string, ...args: any[]) => boolean
+    GetPropBool: (propName: string, ...args: string[]) => boolean
 
     /**
      * @param propName - The name of the netvar
      * @returns The string value of the netvar
      */
-    GetPropString: (propName: string, ...args: any[]) => string
+    GetPropString: (propName: string, ...args: string[]) => string
 
     /**
      * @param propName - The name of the netvar
      * @returns The vector value of the netvar
      */
-    GetPropVector: (propName: string, ...args: any[]) => Vector3
+    GetPropVector: (propName: string, ...args: string[]) => Vector3
 
     /**
      * For entity handle props (m_hXXXXX)
      * @param propName - The name of the netvar
      * @returns The entity value of the netvar
      */
-    GetPropEntity: (propName: string, ...args: any[]) => Entity
+    GetPropEntity: (propName: string, ...args: string[]) => Entity
 
     /**
      * @param value - The float value to set

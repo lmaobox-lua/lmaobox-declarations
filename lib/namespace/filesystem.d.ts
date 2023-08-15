@@ -7,10 +7,10 @@ declare namespace filesystem {
     /**
      * Creates a directory at the specified relative or absolute path.
      * @param path - The path of the directory to create.
-     * @returns Wether the directory was created
+     * @returns Wether the directory was created, and the folderPath of the directory.
      * @see {@link https://docs.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-createdirectorya}
      */
-    function CreateDirectory(path: string): boolean
+    function CreateDirectory(path: string): LuaMultiReturn<[boolean, string]>
 
     /**
      * Enumerates the files and directories in the specified directory.
